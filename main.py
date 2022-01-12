@@ -11,6 +11,6 @@ if __name__ == "__main__":
             Update_exploits.update_db()
         elif sys.argv[2] == "payloads":
             Update_payloads = Payload()
-            Update_payloads.recup_payload()
+            Update_payloads.create_directory()
     else:
         print("Option non prise en charge!")
