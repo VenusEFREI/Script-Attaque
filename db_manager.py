@@ -20,7 +20,7 @@ class Db_manager() :
         else:
             with open("lines.txt", "r") as r:
                 ligne_texte = r.readlines()
-                if self.db.count_entrie_row < len(ligne_texte):
+                if self.db.count_entrie_row() < len(ligne_texte):
                     for line in ligne_texte:
                         x = line.split(',')
                         for c in range(len(x)):
